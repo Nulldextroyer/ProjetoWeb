@@ -11,15 +11,16 @@
 <body>
    <nav>
         <ul>
-            <li><a href="index.php">Start page</a></li>
-            <li><a href="">About us</a></li>
+            <li><a href="index.php">Pagina Inicial</a></li>
+            <li><a href="">Sobre Nós</a></li>
+            <li><a href="login.php">Log-in</a></li>
         </ul>   
    </nav>
     
    <header>
         <div class="bg">
             <div class="content">
-                <a href="formLivro.php" class="card">
+                <a href="forms/formLivro.php" class="card">
                     <div class="atas">
                         <img src="assets/img/undraw_settings_tab_mgiw.svg">
                     </div>
@@ -30,15 +31,15 @@
                         <p>Formulario para adicionar livros à nossa base de dados MySQL.</p>
                     </div>
                 </a>
-                <a href="listaLivros.php" class="card">
+                <a href="menuListas.php" class="card">
                     <div class="atas">
                         <img src="assets/img/undraw_dropdown_menu_re_jqqs.svg">
                     </div>
                     <div class="tengah">
-                        <h2>Lista de Livros</h2>
+                        <h2>Listas Cadastradas</h2>
                     </div>
                     <div class="bawah">
-                        <p>Lista de livros cadastrados em nossa base de dados MySQL.</p>
+                        <p>Listas cadastradas em nossa base de dados MySQL.</p>
                     </div>
                 </a>
                 <div class="card">

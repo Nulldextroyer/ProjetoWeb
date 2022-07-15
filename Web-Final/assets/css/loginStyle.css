@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)),#0c0ce94d;
+}
+
+.container {
+    width: 30%;
+    height: 45%;
+    min-width: 350px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #222222;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    opacity: 0.85;
+}
+
+.text-login {
+    margin: 10px;
+}
+
+.text-login h1 {
+    color: #A0A0D9;
+}
+
+nav {
+    background: linear-gradient(rgba(255,255,255,0.15),rgba(255,255,255,0.1));
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 32px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 3vh;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+    height: 60px;
+    width: 250px;
+    background-color: #73739C;
+    color: #fff;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #39394D;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.icon {
+    height: 60px;
+    width: 60px;
+    background: #39394D;
+    box-shadow: 1px 1px 6px #0000001c;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon i {
+    color: #73739C;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+.login-button button {
+    width: 100%;
+    height: 50px;
+    margin: 0.6rem 0;
+    border: none;
+    background-color: #A0A0D9;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 550;
+    color: #515179;
+}
+
+.login-button button:hover {
+    background-color: #aeaedf;
+}
+
+.feet {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 5px;
+}
+
+.feet p {
+    color: #73739C;
+}
+.feet a {
+    margin-left: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.feet i {
+    margin-left: 5px;
+    color: #8b8bb1;
+}

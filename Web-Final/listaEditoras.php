@@ -2,7 +2,7 @@
 <?php 
     include_once "conf/default.inc.php";
     require_once "conf/Conexao.php";
-    include_once "class/livro.class.php";
+    include_once "class/editora.class.php";
     $procurar = isset($_POST["procurar"]) ? $_POST["procurar"] : ""; 
 ?>
 <html lang="pt-br">
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/tableStyle.css">
     <!-- Link Font Awesome -->
     <script src="https://kit.fontawesome.com/99a619f27c.js" crossorigin="anonymous"></script>
-    <title>Lista de livros</title>
+    <title>Lista de Editoras</title>
     <script src="js/util.js"></script>
 </head>
 <body>
@@ -22,10 +22,10 @@
         <form class="form" method="post">
             <div class="form-header">
                 <div class="title">
-                    <h1>Lista de Livros</h1>
+                    <h1>Lista de Editoras</h1>
                 </div>
                 <div class="back-button">
-                    <button disabled><a href="index.php">Voltar</a></button>
+                    <button disabled><a href="forms/formEditora.php">Voltar</a></button>
                 </div>
             </div>
             <div class="input-box">
@@ -40,13 +40,10 @@
         <table class="content-table">
             <thead>
                 <tr>
-                    <th scope="col">Id livro</th>
-                    <th scope="col">Titulo</th>
-                    <th scope="col">Data de publicação</th>
-                    <th scope="col">Id Autor</th>
                     <th scope="col">Id Editora</th>
-                    <th scope="col">Id Gênero</th>
-                    <th scope="col">Id Condição</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Cnpj</th>
+                    <th scope="col">Numero Telefone</th>
                     <th scope="col"></th>
                     <th scope="col"></th>
                 </tr>
@@ -54,22 +51,19 @@
             <tbody>
                 <?php
                     $pdo = Conexao::getInstance(); 
-                    $consulta = $pdo->query("SELECT * FROM livros 
-                                            WHERE titulo LIKE '%$procurar%' 
-                                            ORDER BY idLivro");
+                    $consulta = $pdo->query("SELECT * FROM editoras 
+                                            WHERE nome LIKE '%$procurar%' 
+                                            ORDER BY idEditora");
                     while ($linha = $consulta->fetch(PDO::FETCH_ASSOC)) { 
-                        $livro = new Livro($linha['idLivro'],$linha['titulo'],$linha['dataPublicacao'],$linha['idAutor'],$linha['idEditora'],$linha['idGenero'],$linha['idCondicao']);
+                        $editora = new Editora($linha['idEditora'],$linha['nome'],$linha['cnpj'],$linha['numeroTelefone']);
                 ?>
                 <tr>
-                    <td><?php echo $livro->getIdLivro();?></td>
-                    <td><?php echo $livro->getTitulo();?></td>
-                    <td><?php echo $livro->getDataPublicacao();?></td>
-                    <td><?php echo $livro->getIdAutor();?></td>
-                    <td><?php echo $livro->getIdEditora();?></td>
-                    <td><?php echo $livro->getIdGenero();?></td>
-                    <td><?php echo $livro->getIdCondicao();?></td>
-                    <td><div class="table-button"><button disabled ><a href="forms/formLivro.php?acao=editar&idLivro=<?=$livro->getIdLivro()?>"><i class="fa-solid fa-pencil"></i>Alterar</a></button></div></td>
-                    <td><div class="table-button"><button disabled><a href="javascript:excluirRegistro('command/acaoLivro.php?acao=excluir&idLivro=<?=$livro->getIdLivro()?>')"><i class="fa-regular fa-trash-can"></i>Excluir</a></button></div></td> 
+                    <td><?php echo $editora->getIdEditora();?></td>
+                    <td><?php echo $editora->getNome();?></td>
+                    <td><?php echo $editora->getCnpj();?></td>
+                    <td><?php echo $editora->getNumeroTelefone();?></td>
+                    <td><div class="table-button"><button disabled ><a href="forms/formEditora.php?acao=editar&idEditora=<?=$editora->getIdEditora()?>"><i class="fa-solid fa-pencil"></i>Alterar</a></button></div></td>
+                    <td><div class="table-button"><button disabled><a href="javascript:excluirRegistro('command/acaoEditora.php?acao=excluir&idEditora=<?=$editora->getIdEditora()?>')"><i class="fa-regular fa-trash-can"></i>Excluir</a></button></div></td> 
                 </tr>
             </tbody>
             <?php }?> 
