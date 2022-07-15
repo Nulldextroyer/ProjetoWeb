@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    background: linear-gradient(rgba(255,255,255,0.15),rgba(255,255,255,0.1));
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 32px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 3vh;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+/* Cards */
+
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)),#0c0ce94d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    margin: 0 auto;
+    width: 90%;
+    height: 70%;
+    max-width: 1366px;
+    max-height: 768px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin: 10px;
+    width: 25%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    overflow: hidden;
+    opacity: 0.8;
+    text-decoration: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    width: 30%;
+    height: 100%;
+}
+
+.card .atas img {
+    width: 90%;
+    height: 90%;
+}
+
+.card .atas {
+    width: 100%;
+    height: 60%;
+    background: #c8c6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .tengah {
+    width: 100%;
+    height: 10%;
+    background: #ecf0f1;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    color: #232323;
+}
+
+.card .bawah {
+    width: 100%;
+    height: 30%;
+    background: #2f2e41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .bawah p {
+    width: 80%;
+    height: auto;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}

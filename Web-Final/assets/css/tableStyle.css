@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)),#0c0ce94d;
+}
+
+.container {
+    min-width: 800px;
+    min-height: 500px;
+    width: 80%;
+    max-width: 1030px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    background-color: white;
+}
+
+.form-header {
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+}
+
+.back-button button {
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button button:hover {
+    background-color: #6b63fff1;
+}
+
+.back-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.input-box {
+    margin: 0 32px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.5rem 1.2rem;
+    border: 0.5px solid #bdbaba;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+    width: 210px;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.input-box label,
+.gender-title h6 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.confirmation-button button {
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.confirmation-button button:hover {
+    background-color: #6b63fff1;
+}
+
+.title h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #6c63ff;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.table-button button{
+    border: none;
+    background-color: #6c63ff;
+    padding: 4px 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.table-button button:hover {
+    background-color: #6b63fff1;
+}
+
+.table-button button a {
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.content-table {
+    margin: 0 32px;
+    display: block;
+    overflow: auto;
+    max-height: 510px;
+    border-radius: 1rem;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    min-width: 400px;
+    border-radius: 10px 10px 0 0;
+}
+
+.content-table thead tr {
+    background-color: #39384e;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid rgb(207, 190, 190);
+}
+
+.content-table td:first-child{
+    border-left: 1px solid rgb(207, 190, 190);
+}
+.content-table td:last-child{
+    border-right: 1px solid rgb(207, 190, 190);
+}
+
+
+
+
