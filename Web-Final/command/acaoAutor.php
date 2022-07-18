@@ -56,7 +56,7 @@
         $stmt = $pdo->prepare('DELETE FROM autores WHERE idAutor = :idAutor');
         $stmt->bindParam('idAutor', $idAutor, PDO::PARAM_INT);
         $stmt->execute();
-        header("location:../listaAutores.php");
+        header("location:../lists/listaAutores.php");
     }
 
     function buildAutor(){

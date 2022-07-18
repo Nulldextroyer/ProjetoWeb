@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    background: linear-gradient(rgba(255,255,255,0.15),rgba(255,255,255,0.1));
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 32px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 3vh;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)),#0c0ce94d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-auto-rows: auto;
+    gap: 60px;
+    font-family: sans-serif;
+}
+
+.card {
+    background: #c8c6e6;
+    width: 240px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    cursor: pointer;
+}
+
+.card:hover {
+    background: #cccbe2;
+}
+
+.card a {
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: none;
+    color: #232323;
+}

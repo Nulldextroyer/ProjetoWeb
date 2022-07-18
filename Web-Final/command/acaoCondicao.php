@@ -60,7 +60,7 @@
         $stmt = $pdo->prepare('DELETE FROM condicoes WHERE idCondicao = :idCondicao');
         $stmt->bindParam('idCondicao', $idCondicao, PDO::PARAM_INT);
         $stmt->execute();
-        header("location:../listaCondicoes.php");
+        header("location:../lists/listaCondicoes.php");
     }
 
     function buildCondicao(){

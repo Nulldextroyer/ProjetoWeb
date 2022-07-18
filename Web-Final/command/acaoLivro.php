@@ -76,7 +76,7 @@
         $stmt = $pdo->prepare('DELETE FROM livros WHERE idLivro = :idLivro');
         $stmt->bindParam('idLivro', $idLivro, PDO::PARAM_INT);
         $stmt->execute();
-        header("location:../listaLivros.php");
+        header("location:../lists/listaLivros.php");
     }
 
     function buildLivro(){

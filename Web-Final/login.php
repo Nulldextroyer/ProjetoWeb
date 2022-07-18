@@ -14,18 +14,19 @@
 
 <body>
     <nav>
+
         <ul>
-            <li><a href="index.php">Start page</a></li>
-            <li><a href="">About us</a></li>
+            <li><a href="index.php">Pagina Inicial</a></li>
+            <li><a href="sobreNos.php">Sobre Nós</a></li>
             <li><a href="login.php">Log-in</a></li>
-        </ul>   
+        </ul>
    </nav>
     <div class="bg">
         <div class="container">
             <div class="text-login">
                 <h1>Login</h1>
             </div>
-            <form action="" method="post">
+            <form action="command/acaoLogin.php" method="post">
                 <div class="input-box">
                     <div class="icon">
                         <i class="fa-solid fa-user"></i>
@@ -39,10 +40,10 @@
                     <input type="password" placeholder="Digite sua senha" name="senha">
                 </div>
                 <div class="login-button">
-                    <button type="submit" name="Login" value="login">Entrar</button>
+                    <button type="submit" name="acao" value="login">Entrar</button>
                 </div>
                 <div class="feet">
-                    <p>Not a member?<a href="">Sing up now</a></p>
+                    <p>Not a member?<a href="forms/formUsuario.php">Sing up now</a></p>
                     <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </form>

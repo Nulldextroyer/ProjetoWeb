@@ -60,7 +60,7 @@
         $stmt = $pdo->prepare('DELETE FROM generos WHERE idGenero = :idGenero');
         $stmt->bindParam('idGenero', $idGenero, PDO::PARAM_INT);
         $stmt->execute();
-        header("location:../listaGeneros.php");
+        header("location:../lists/listaGeneros.php");
     }
 
     function buildGenero(){

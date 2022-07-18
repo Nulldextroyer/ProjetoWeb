@@ -64,7 +64,7 @@
         $stmt = $pdo->prepare('DELETE FROM editoras WHERE idEditora = :idEditora');
         $stmt->bindParam('idEditora', $idEditora, PDO::PARAM_INT);
         $stmt->execute();
-        header("location:../listaEditoras.php");
+        header("location:../lists/listaEditoras.php");
     }
 
     function buildEditora(){

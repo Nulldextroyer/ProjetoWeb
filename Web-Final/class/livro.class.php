@@ -97,7 +97,7 @@ class livro {
 		"Autor: ".$this->idAutor."/".
 		"Editora: ".$this->idEditora."/". 
 		"Gênero: ".$this->idGenero."/".
-		"Condição do livro: ".$this->idCondicao."/";
+		"Condição do livro: ".$this->idCondicao;
 	}
 
 }
